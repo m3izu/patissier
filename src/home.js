@@ -1,5 +1,4 @@
 class Description {
-    static counter = 0;
 
     constructor(name, title, desc) {
         this.name = name;
@@ -31,13 +30,14 @@ class Description {
 
 
 export function createHome() {
+Description.counter = 0;
 
 const homeBody = document.createElement("div");
 homeBody.id = "homeBody";
 
 const homeTitle = document.createElement("h1");
 homeTitle.id = "homeTitle";
-homeTitle.textContent = "Mei's Pâtisserie Bar"
+homeTitle.textContent = "Mei's Pâtisserie"
 homeBody.appendChild(homeTitle);
 
 const homeDescCont = document.createElement("div");
